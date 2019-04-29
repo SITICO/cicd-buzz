@@ -1,0 +1,10 @@
+version: '2'
+services:
+  remote-kernel:
+    build:
+      context: .
+    ports:
+      - "8888:8888"
+    volumes:
+      # CHANGE ~/dev to your project path on the host machine
+      - C:\Users\antonio.andres\Documents\GITHUB\cicd-buzz:/data
